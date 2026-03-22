@@ -14,7 +14,3 @@ resource "aws_instance" "main" {
     Name = "websample"
   }
 }
-
-resource "null_resource" "test" {
-
-}
