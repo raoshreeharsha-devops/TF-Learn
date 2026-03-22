@@ -1,0 +1,1 @@
+cp -p /etc/passwd /tmp/password.txt
