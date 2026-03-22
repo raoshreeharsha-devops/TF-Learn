@@ -1,8 +1,8 @@
 terraform {
   required_providers {
-    null = {
-      source  = "hashicorp/null"
-      version = "3.2.4"
+    aws = {
+      source  = "hashicorp/aws"
+      version = "6.17.0"
     }
   }
 }
@@ -14,8 +14,7 @@ resource "aws_instance" "main" {
     Name = "websample"
   }
 }
-  provider = "aws" {
-        region = "us-east-1"
-}
 
-provider
+provider "aws" {
+  region = "us-east-1"
+}
