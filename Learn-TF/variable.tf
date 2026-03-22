@@ -1,8 +1,15 @@
-variable "input_instance_nos" {
-  type = number
-  default = 3
-}
-
 variable "components" {
    default = ["frontend","postgresql","portfolio-services","auth-service","analytics"]
+}
+
+variable "instance_cnt" {
+  description = "No. of EC2 instance"
+  type        = number
+  default     = "1"
+}
+
+variable "instance_name" {
+  description = "Instance name"
+  type = string
+  default = "EC2"
 }
