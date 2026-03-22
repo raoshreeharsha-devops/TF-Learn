@@ -14,6 +14,7 @@ provider "aws" {
 }
 
 resource "aws_route53_record" "test_dns" {
+  count = 5
   name    = var.components[count.index]
   type    = "A"
   zone_id = "Z0201776NY87AL3MW923"
