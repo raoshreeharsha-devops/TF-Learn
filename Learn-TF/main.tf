@@ -20,5 +20,6 @@ resource "aws_route53_record" "test_dns" {
   zone_id = "Z0201776NY87AL3MW923"
   ttl = 30
   records = [aws_instance.test_loop[count.index].private_ip]
+  #records
 }
 
