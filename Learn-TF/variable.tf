@@ -5,11 +5,9 @@ variable "components" {
 variable "instance_cnt" {
   description = "No. of EC2 instance"
   type        = number
-  default     = "1"
 }
 
 variable "instance_name" {
   description = "Instance name"
   type = string
-  default = "EC2"
 }
